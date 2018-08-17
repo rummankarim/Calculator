@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+
+		var a,b; //The amount of inputs required by the user
+
+		function setValues(){ //sets the values of the inputs
+			a = Number(document.getElementById("a").value);
+			b = Number(document.getElementById("b").value);
+		}
+
+		function sum(){ //addition
+			setValues();
+			result = a+b;
+			alert("The sum equals to "+result);
+		}
+
+		function difference(){ //subtraction
+			setValues();
+			result =a-b;
+			alert("The difference equals to "+result);
+
+		}
+
+		function multiply() { //product
+			setValues();
+			result =a*b;
+			alert("The product equals to "+result);
+		}
+
+		function divide() { //quotient
+			setValues();
+			result =a/b;
+			alert("The quotient equals to "+result);
+		}
+
+		function average() { //finding the average of 2 numbers
+			setValues();
+			result =(a+b)/2
+			alert("The average is "+result);
+		}
+		
+	</script>
+</head>
+<body>
+	<div> 
+		<input id="a" type="text"/>
+		<input id="b" type="text"/>
+		<input type="button" onClick="sum()" value="sum"/>
+		<input type="button" onClick="difference()" value="difference"/>
+		<input type="button" onClick="multiply()" value="multiply"/>
+		<input type="button" onClick="divide()" value="divide"/>
+		<input type="button" onClick="average()" value="average"/>
+	</div>
+</body>
+</html>
